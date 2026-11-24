@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendamento | Belle Clinic</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-belle sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            belle<span>clinic</span>
+            <small>ESTÉTICA & BEM-ESTAR</small>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuBelle"
+            aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuBelle">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clinica.html">A clínica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="procedimentos.html">Procedimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-belle btn-sm ms-lg-2 active" href="agendamento.html">
+                        Agendar horário
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <section class="page-hero">
+        <div class="container text-center reveal">
+            <span class="eyebrow">SEU MOMENTO COMEÇA AQUI</span>
+            <h1>
+                Vamos reservar um tempo
+                <em>para você?</em>
+            </h1>
+            <p>
+                Preencha os campos abaixo para enviar sua solicitação.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-space booking-section">
+        <div class="container">
+
+            <div class="row g-5 align-items-start">
+
+                <div class="col-lg-5 reveal">
+                    <div class="booking-aside">
+                        <span class="eyebrow">BELLE CLINIC</span>
+
+                        <h2>
+                            Um carinho na rotina faz
+                            <em>bem.</em>
+                        </h2>
+
+                        <p>
+                            Conte para nós qual cuidado você gostaria de conhecer.
+                            Nossa equipe poderá entrar em contato para confirmar
+                            a disponibilidade.
+                        </p>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85"
+                            alt="Ambiente relaxante de spa">
+
+                        <div class="booking-tip">
+                            <i class="bi bi-info-circle"></i>
+                            <span>
+                                O envio do formulário é uma solicitação,
+                                não uma confirmação automática do horário.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal reveal-delay-1">
+                    <div class="booking-form-card">
+
+                        <h2>Solicite seu horário</h2>
+                        <p class="form-intro">
+                            Todos os campos com * são obrigatórios.
+                        </p>
+
+                        <div id="formFeedback"
+                             class="alert d-none"
+                             role="status"
+                             aria-live="polite">
+                        </div>
+
+                        <form
+                            id="bookingForm"
+                            action="https://formsubmit.co/ajax/isabelly.vcosta@eaportal.org"
+                            method="POST">
+
+                            <input type="hidden" name="_subject"
+                                value="Nova solicitação de agendamento - Belle Clinic">
+
+                            <input type="hidden" name="_template" value="table">
+
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">
+                                        Nome completo *
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        id="nome"
+                                        name="Nome"
+                                        type="text"
+                                        minlength="3"
+                                        maxlength="80"
+                                        autocomplete="name"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">
+                                        E-mail *
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        id="email"
+                                        name="E-mail"
+                                        type="email"
+                                        maxlength="120"
+                                        autocomplete="email"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="telefone" class="form-label">
+                                        Telefone/WhatsApp *
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        id="telefone"
+                                        name="Telefone"
+                                        type="tel"
+                                        inputmode="tel"
+                                        autocomplete="tel"
+                                        placeholder="(00) 00000-0000"
+                                        minlength="10"
+                                        maxlength="20"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="servico" class="form-label">
+                                        Procedimento *
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        id="servico"
+                                        name="Procedimento"
+                                        required>
+
+                                        <option value="">Selecione uma opção</option>
+                                        <option>Limpeza de pele premium</option>
+                                        <option>Hidratação facial</option>
+                                        <option>Tratamento revitalizante</option>
+                                        <option>Massagem relaxante</option>
+                                        <option>Drenagem linfática</option>
+                                        <option>Banho de lua</option>
+                                        <option>Depilação a laser</option>
+                                        <option>Bronzeamento a jato</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="data" class="form-label">
+                                        Data desejada *
+                                    </label>
+                                    <input
+                                        class="form-control"
+                                        id="data"
+                                        name="Data desejada"
+                                        type="date"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="horario" class="form-label">
+                                        Período preferido *
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        id="horario"
+                                        name="Período preferido"
+                                        required>
+
+                                        <option value="">Selecione</option>
+                                        <option>Manhã</option>
+                                        <option>Tarde</option>
+                                        <option>Fim da tarde</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="observacao" class="form-label">
+                                        Mensagem (opcional)
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        id="observacao"
+                                        name="Mensagem"
+                                        rows="3"
+                                        maxlength="500"
+                                        placeholder="Escreva alguma dúvida ou informação sobre sua solicitação."></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="consentimento"
+                                            required>
+
+                                        <label
+                                            class="form-check-label"
+                                            for="consentimento">
+                                            Concordo que os dados informados sejam usados
+                                            para responder à minha solicitação de agendamento. *
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button
+                                        class="btn btn-belle w-100"
+                                        id="submitBooking"
+                                        type="submit">
+
+                                        Enviar solicitação
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </button>
+
+                                    <small class="privacy-note">
+                                        Seus dados serão enviados para o e-mail de contato
+                                        da Belle Clinic para retorno sobre a solicitação.
+                                    </small>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="requests-area mt-5">
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                    <div>
+                        <span class="eyebrow">PAINEL LOCAL</span>
+                        <h2 class="h3 mb-0">Solicitações nesta sessão</h2>
+                    </div>
+
+                    <span class="requests-count" id="requestsCount">
+                        0 solicitações
+                    </span>
+                </div>
+
+                <div id="requestsList" class="requests-list mt-3">
+                    <p class="empty-state">
+                        As solicitações registradas nesta sessão aparecerão aqui.
+                    </p>
+                </div>
+
+                <p class="disclaimer mt-2">
+                    Esta lista é demonstrativa e fica no navegador durante a sessão.
+                    O recebimento por e-mail é feito separadamente pelo formulário.
+                </p>
+
+            </section>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer-belle">
+    <div class="container">
+        <div class="row gy-4">
+
+            <div class="col-md-5">
+                <a class="navbar-brand" href="index.html">
+                    belle<span>clinic</span>
+                    <small>ESTÉTICA & BEM-ESTAR</small>
+                </a>
+                <p class="mt-3">Sua beleza, seu momento, seu cuidado.</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h6>NAVEGAÇÃO</h6>
+                <a href="index.html">Início</a>
+                <a href="clinica.html">A clínica</a>
+                <a href="procedimentos.html">Procedimentos</a>
+                <a href="agendamento.html">Agendamento</a>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <h6>CONTATO</h6>
+                <p>Entre em contato para tirar dúvidas e solicitar seu horário.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Belle Clinic. Projeto acadêmico.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html> 

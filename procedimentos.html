@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Procedimentos | Belle Clinic</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-belle sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            belle<span>clinic</span>
+            <small>ESTÉTICA & BEM-ESTAR</small>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuBelle"
+            aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuBelle">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clinica.html">A clínica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="procedimentos.html">Procedimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-belle btn-sm ms-lg-2" href="agendamento.html">
+                        Agendar horário
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+    <section class="page-hero">
+        <div class="container text-center reveal">
+            <span class="eyebrow">NOSSOS CUIDADOS</span>
+            <h1>
+                Encontre seu momento de
+                <em>bem-estar.</em>
+            </h1>
+            <p>
+                Conheça nossos cuidados faciais e corporais e escolha
+                a experiência que combina com você.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-space">
+        <div class="container">
+
+            <div class="section-heading text-center reveal">
+                <span class="eyebrow">CUIDADOS FACIAIS</span>
+                <h2>Um cuidado especial para sua <em>pele.</em></h2>
+                <p>Experiências pensadas para o conforto e o cuidado facial.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- LIMPEZA DE PELE -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=85"
+                             alt="Atendimento de cuidado facial">
+
+                        <div class="service-card-body">
+                            <span>FACIAL</span>
+                            <h3>Limpeza de pele premium</h3>
+                            <p>
+                                Um cuidado facial com etapas de higienização,
+                                limpeza e finalização, respeitando as características da pele.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Marcas de referência</strong>
+                                Bioré, La Roche-Posay e Bioderma.
+                                A seleção dos produtos depende da avaliação profissional.
+                            </div>
+
+                            <span class="service-price">R$ 189,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Limpeza de pele premium">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- HIDRATAÇÃO -->
+                <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=85"
+                             alt="Produtos para hidratação facial">
+
+                        <div class="service-card-body">
+                            <span>FACIAL</span>
+                            <h3>Hidratação facial</h3>
+                            <p>
+                                Um ritual de cuidado voltado à hidratação e
+                                à sensação de conforto da pele.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Marcas de referência</strong>
+                                Creamy, Vichy e La Roche-Posay.
+                                Os produtos seriam escolhidos conforme a necessidade da pele.
+                            </div>
+
+                            <span class="service-price">R$ 159,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Hidratação facial">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- REVITALIZAÇÃO -->
+                <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=85"
+                             alt="Ambiente de tratamento facial">
+
+                        <div class="service-card-body">
+                            <span>FACIAL</span>
+                            <h3>Tratamento revitalizante</h3>
+                            <p>
+                                Uma experiência de cuidado facial com etapas
+                                de hidratação e finalização.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Marcas de referência</strong>
+                                Avène, Vichy e La Roche-Posay.
+                                A escolha seria individualizada.
+                            </div>
+
+                            <span class="service-price">R$ 219,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Tratamento revitalizante">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-space services-preview">
+        <div class="container">
+
+            <div class="section-heading text-center reveal">
+                <span class="eyebrow">CUIDADOS CORPORAIS</span>
+                <h2>Seu momento de <em>relaxar.</em></h2>
+                <p>Cuidados corporais e experiências de bem-estar.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- MASSAGEM -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=85"
+                             alt="Ambiente de massagem relaxante">
+
+                        <div class="service-card-body">
+                            <span>BEM-ESTAR</span>
+                            <h3>Massagem relaxante</h3>
+                            <p>
+                                Uma experiência tranquila com movimentos
+                                voltados ao relaxamento e ao conforto.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Marcas de referência</strong>
+                                Bio Oil e Granado, entre outras opções de óleos
+                                e produtos cosméticos adequados.
+                            </div>
+
+                            <span class="service-price">R$ 189,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Massagem relaxante">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- DRENAGEM -->
+                <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=85"
+                             alt="Espaço de atendimento corporal">
+
+                        <div class="service-card-body">
+                            <span>BEM-ESTAR</span>
+                            <h3>Drenagem linfática</h3>
+                            <p>
+                                Técnica corporal realizada por profissional
+                                habilitado, após avaliação e indicação adequada.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Produtos de referência</strong>
+                                Óleos e cosméticos corporais de marcas como
+                                Granado e Bio Oil, conforme avaliação.
+                            </div>
+
+                            <span class="service-price">R$ 179,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Drenagem linfática">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- BANHO DE LUA -->
+                <div class="col-md-6 col-lg-4 reveal reveal-delay-2">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85"
+                             alt="Produtos de cuidado corporal">
+
+                        <div class="service-card-body">
+                            <span>CUIDADO CORPORAL</span>
+                            <h3>Banho de lua</h3>
+                            <p>
+                                Experiência cosmética corporal que inclui
+                                cuidados de preparação e hidratação da pele.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Marcas de referência</strong>
+                                Depil Bella e produtos hidratantes de marcas
+                                como Nivea e Granado.
+                            </div>
+
+                            <span class="service-price">R$ 149,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Banho de lua">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- LASER -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=85"
+                             alt="Ambiente de estética">
+
+                        <div class="service-card-body">
+                            <span>TECNOLOGIA</span>
+                            <h3>Depilação a laser</h3>
+                            <p>
+                                Serviço de tecnologia estética realizado
+                                com equipamento apropriado e avaliação prévia.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Equipamentos e cuidados</strong>
+                                Equipamento profissional adequado, proteção
+                                indicada e cosméticos de cuidados posteriores.
+                            </div>
+
+                            <span class="service-price">A partir de R$ 129,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Depilação a laser">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- BRONZEAMENTO -->
+                <div class="col-md-6 col-lg-4 reveal reveal-delay-1">
+                    <article class="service-card">
+                        <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=85"
+                             alt="Ambiente iluminado e acolhedor">
+
+                        <div class="service-card-body">
+                            <span>ESTÉTICA CORPORAL</span>
+                            <h3>Bronzeamento a jato</h3>
+                            <p>
+                                Aplicação cosmética de produto autobronzeador,
+                                sem exposição à radiação ultravioleta.
+                            </p>
+
+                            <div class="service-products">
+                                <strong>Produtos de referência</strong>
+                                Cosméticos autobronzeadores próprios para uso
+                                profissional, conforme indicação do fabricante.
+                            </div>
+
+                            <span class="service-price">R$ 229,90</span>
+                            <a class="service-booking" href="agendamento.html"
+                               data-service="Bronzeamento a jato">
+                                Solicitar horário <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <p class="disclaimer mt-4">
+                Os valores são ilustrativos e foram definidos para fins do projeto acadêmico.
+                Marcas e produtos são referências exemplificativas, não uma indicação de uso.
+                Procedimentos reais dependem de avaliação, profissional habilitado,
+                equipamentos adequados e observância das normas de segurança.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="cta-section text-center">
+        <div class="container reveal">
+            <span class="eyebrow">BELLE CLINIC</span>
+            <h2>Seu momento de cuidado <em>começa aqui.</em></h2>
+            <p>Escolha seu serviço e envie uma solicitação de horário.</p>
+            <a href="agendamento.html" class="btn btn-belle">
+                Agendar horário <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer-belle">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-5">
+                <a class="navbar-brand" href="index.html">
+                    belle<span>clinic</span>
+                    <small>ESTÉTICA & BEM-ESTAR</small>
+                </a>
+                <p class="mt-3">Sua beleza, seu momento, seu cuidado.</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h6>NAVEGAÇÃO</h6>
+                <a href="index.html">Início</a>
+                <a href="clinica.html">A clínica</a>
+                <a href="procedimentos.html">Procedimentos</a>
+                <a href="agendamento.html">Agendamento</a>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <h6>CONTATO</h6>
+                <p>Entre em contato para tirar dúvidas e solicitar seu horário.</p>
+                <a href="agendamento.html">Fale com a Belle Clinic</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Belle Clinic. Projeto acadêmico.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html> 
